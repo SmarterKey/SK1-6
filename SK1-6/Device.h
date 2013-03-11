@@ -11,12 +11,12 @@
 
 @interface Device : NSObject
 
-@property (nonatomic, strong) NSString *deviceNickName;
-@property (nonatomic, strong) NSString *deviceGSMNumber;
-@property (nonatomic, strong) NSString *devicePassCode;
-@property (nonatomic, strong) NSString *deviceTwilioNumber;
+@property (nonatomic, strong) NSString *nickName;
+@property (nonatomic, strong) NSString *gsmNumber;
+@property (nonatomic, strong) NSString *passCode;
+@property (nonatomic, strong) NSString *twilioNumber;
 
-- (id)initWithTitle:(NSString*)deviceName deviceNickName:(NSString*)deviceNickName deviceGSMNumber:(NSString*)deviceGSMNumber devicePassCode:(NSString*)devicePassCode deviceTwilioNumber:(NSString*)deviceTwilioNumber;
+- (id)initWithTitle:(NSString*)nickName gsmNumber:(NSString*)gsmNumber passCode:(NSString*)passCode twilioNumber:(NSString*)twilioNumber;
 
 
 @end

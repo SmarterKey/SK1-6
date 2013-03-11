@@ -10,17 +10,17 @@
 
 @implementation Device
 
-@synthesize deviceNickName = _deviceNickName;
-@synthesize deviceGSMNumber = _deviceGSMNumber;
-@synthesize devicePassCode = _devicePassCode;
-@synthesize deviceTwilioNumber = _deviceTwilioNumber;
+@synthesize nickName = _nickName;
+@synthesize gsmNumber = _gsmNumber;
+@synthesize passCode = _passCode;
+@synthesize twilioNumber = _twilioNumber;
 
--(id)initWithTitle:(NSString *)deviceName deviceNickName:(NSString *)deviceNickName deviceGSMNumber:(NSString *)deviceGSMNumber devicePassCode:(NSString *)devicePassCode deviceTwilioNumber:(NSString *)deviceTwilioNumber {
+-(id)initWithTitle:(NSString *)nickName gsmNumber:(NSString *)gsmNumber passCode:(NSString *)passCode twilioNumber:(NSString *)twilioNumber {
     if ((self = [super init])) {
-        self.deviceNickName = deviceNickName;
-        self.deviceGSMNumber = deviceGSMNumber;
-        self.devicePassCode = devicePassCode;
-        self.deviceTwilioNumber = deviceTwilioNumber;
+        self.nickName = nickName;
+        self.gsmNumber = gsmNumber;
+        self.passCode = passCode;
+        self.twilioNumber = twilioNumber;
     }
     return self;
 }

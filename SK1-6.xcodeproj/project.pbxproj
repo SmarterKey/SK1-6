@@ -24,6 +24,7 @@
 		84E5FA9916EE5EC4007049B9 /* vector.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E5FA9716EE5EC4007049B9 /* vector.png */; };
 		84E5FA9A16EE5EC4007049B9 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E5FA9816EE5EC4007049B9 /* house.png */; };
 		84E5FA9F16EE7B7B007049B9 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5FA9E16EE7B7B007049B9 /* Device.m */; };
+		84E5FAA216EE800C007049B9 /* Host.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5FAA116EE800C007049B9 /* Host.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		84E5FA9816EE5EC4007049B9 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		84E5FA9D16EE7B7B007049B9 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
 		84E5FA9E16EE7B7B007049B9 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		84E5FAA016EE800C007049B9 /* Host.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host.h; sourceTree = "<group>"; };
+		84E5FAA116EE800C007049B9 /* Host.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 			children = (
 				84E5FA9D16EE7B7B007049B9 /* Device.h */,
 				84E5FA9E16EE7B7B007049B9 /* Device.m */,
+				84E5FAA016EE800C007049B9 /* Host.h */,
+				84E5FAA116EE800C007049B9 /* Host.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				84E5FA7916EE53C7007049B9 /* AppDelegate.m in Sources */,
 				84E5FA7F16EE53C8007049B9 /* ViewController.m in Sources */,
 				84E5FA9F16EE7B7B007049B9 /* Device.m in Sources */,
+				84E5FAA216EE800C007049B9 /* Host.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
