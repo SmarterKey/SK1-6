@@ -150,6 +150,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="U2p-To-5YH" kind="relationship" relationship="viewControllers" id="Rj0-ra-Km6"/>
+                        <segue destination="daT-hm-q2w" kind="relationship" relationship="viewControllers" id="guB-Pk-Ll1"/>
                         <segue destination="GhM-Pl-Zdp" kind="relationship" relationship="viewControllers" id="Chc-p1-ys4"/>
                         <segue destination="ZXb-M0-fi3" kind="relationship" relationship="viewControllers" id="8dv-a8-j1H"/>
                         <segue destination="HS4-uo-gDQ" kind="relationship" relationship="viewControllers" id="2kz-eU-vLA"/>
@@ -176,6 +177,30 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="-78" y="1333"/>
+        </scene>
+        <!--View Controller - Commands-->
+        <scene sceneID="fc0-yc-Np6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8i-EB-7iP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ujd-hZ-Bjk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8g-qh-ajQ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a static tableView for all commands OR here is the control centre with UI Picker View to generate commands." id="uMK-ck-pea">
+                                <rect key="frame" x="75" y="29" width="170" height="132"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Commands" id="vVf-lJ-y7x"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="460" y="1969"/>
         </scene>
         <!--Navigation Controller - Device-->
         <scene sceneID="Bv1-Pj-0Zz">
@@ -215,6 +240,25 @@
             </objects>
             <point key="canvasLocation" x="-11" y="-6"/>
         </scene>
+        <!--Navigation Controller - Command-->
+        <scene sceneID="Xep-Lv-oV0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1P-QQ-bCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="daT-hm-q2w" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Command" image="vector.png" id="PFZ-2S-1B9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RcT-Sz-aIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ujd-hZ-Bjk" kind="relationship" relationship="rootViewController" id="Vwn-ZZ-UQT"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-66" y="1969"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house.png" width="30" height="30"/>
@@ -222,6 +266,7 @@
         <image name="lock.png" width="32" height="32"/>
         <image name="unlock.png" width="32" height="32"/>
         <image name="user.png" width="24" height="21"/>
+        <image name="vector.png" width="29" height="30"/>
         <image name="wrench.png" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -23,6 +23,7 @@
 		84E5FA9616EE59E3007049B9 /* unlock.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E5FA9416EE59E3007049B9 /* unlock.png */; };
 		84E5FA9916EE5EC4007049B9 /* vector.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E5FA9716EE5EC4007049B9 /* vector.png */; };
 		84E5FA9A16EE5EC4007049B9 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E5FA9816EE5EC4007049B9 /* house.png */; };
+		84E5FA9F16EE7B7B007049B9 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E5FA9E16EE7B7B007049B9 /* Device.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		84E5FA9416EE59E3007049B9 /* unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlock.png; sourceTree = "<group>"; };
 		84E5FA9716EE5EC4007049B9 /* vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vector.png; sourceTree = "<group>"; };
 		84E5FA9816EE5EC4007049B9 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		84E5FA9D16EE7B7B007049B9 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		84E5FA9E16EE7B7B007049B9 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +96,9 @@
 		84E5FA6E16EE53C7007049B9 /* SK1-6 */ = {
 			isa = PBXGroup;
 			children = (
+				84E5FA9C16EE7B54007049B9 /* GUI */,
+				84E5FA9B16EE7B23007049B9 /* Model */,
 				84E5FA8916EE58B6007049B9 /* Images */,
-				84E5FA7716EE53C7007049B9 /* AppDelegate.h */,
-				84E5FA7816EE53C7007049B9 /* AppDelegate.m */,
-				84E5FA7A16EE53C7007049B9 /* MainStoryboard.storyboard */,
-				84E5FA7D16EE53C8007049B9 /* ViewController.h */,
-				84E5FA7E16EE53C8007049B9 /* ViewController.m */,
 				84E5FA6F16EE53C7007049B9 /* Supporting Files */,
 			);
 			path = "SK1-6";
@@ -128,6 +128,27 @@
 				84E5FA8E16EE5900007049B9 /* wrench.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		84E5FA9B16EE7B23007049B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E5FA9D16EE7B7B007049B9 /* Device.h */,
+				84E5FA9E16EE7B7B007049B9 /* Device.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84E5FA9C16EE7B54007049B9 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				84E5FA7716EE53C7007049B9 /* AppDelegate.h */,
+				84E5FA7816EE53C7007049B9 /* AppDelegate.m */,
+				84E5FA7A16EE53C7007049B9 /* MainStoryboard.storyboard */,
+				84E5FA7D16EE53C8007049B9 /* ViewController.h */,
+				84E5FA7E16EE53C8007049B9 /* ViewController.m */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +224,7 @@
 				84E5FA7516EE53C7007049B9 /* main.m in Sources */,
 				84E5FA7916EE53C7007049B9 /* AppDelegate.m in Sources */,
 				84E5FA7F16EE53C8007049B9 /* ViewController.m in Sources */,
+				84E5FA9F16EE7B7B007049B9 /* Device.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
