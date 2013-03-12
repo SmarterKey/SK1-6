@@ -10,18 +10,27 @@
         <scene sceneID="Tvw-J0-NdD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TP0-Yk-gME" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="zpy-k2-hbm" sceneMemberID="viewController">
+                <viewController id="zpy-k2-hbm" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mm-TB-bAL">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a tableView for all activ users. Add edit-add-delete functions. Add a detail view controller to edit  and add users." id="oXe-69-ZdV">
-                                <rect key="frame" x="75" y="20" width="170" height="63"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Dx5-Lf-k9o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SetThis" id="K5w-23-z0o">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -30,29 +39,47 @@
             </objects>
             <point key="canvasLocation" x="440" y="725"/>
         </scene>
-        <!--View Controller - Device Settings-->
-        <scene sceneID="HM3-c9-yxe">
+        <!--Device MasterVC - Device Settings-->
+        <scene sceneID="hHs-kg-cql">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9wQ-cf-6mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="zB2-bR-JEu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NdN-kr-ZXQ">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTe-fg-ywU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="jsw-kQ-wmG" customClass="DeviceMasterVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7PL-Ig-UkM">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a tableView for all activ devices. Add edit-add-delete functions. Add a detail view controller to edit  and add devices." id="qIl-fg-89V">
-                                <rect key="frame" x="60" y="20" width="200" height="106"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Device Settings" id="R5n-lC-P0M"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DeviceCell" textLabel="8Tf-dd-Bj5" style="IBUITableViewCellStyleDefault" id="Baf-WH-ZKj">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Tf-dd-Bj5">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jsw-kQ-wmG" id="Zhb-1v-LGZ"/>
+                            <outlet property="delegate" destination="jsw-kQ-wmG" id="BCn-uZ-z3G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Device Settings" id="ABH-mY-IHc"/>
+                    <connections>
+                        <outlet property="deviceTableView" destination="7PL-Ig-UkM" id="dtb-n8-XIm"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="467" y="-604"/>
+            <point key="canvasLocation" x="471" y="-616"/>
         </scene>
         <!--View Controller - Host Settings-->
         <scene sceneID="Jyc-VG-285">
@@ -153,7 +180,7 @@
                         <segue destination="daT-hm-q2w" kind="relationship" relationship="viewControllers" id="guB-Pk-Ll1"/>
                         <segue destination="GhM-Pl-Zdp" kind="relationship" relationship="viewControllers" id="Chc-p1-ys4"/>
                         <segue destination="ZXb-M0-fi3" kind="relationship" relationship="viewControllers" id="8dv-a8-j1H"/>
-                        <segue destination="HS4-uo-gDQ" kind="relationship" relationship="viewControllers" id="2kz-eU-vLA"/>
+                        <segue destination="8PV-eV-PAb" kind="relationship" relationship="viewControllers" id="HXp-E0-4YK"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -202,25 +229,6 @@
             </objects>
             <point key="canvasLocation" x="460" y="1969"/>
         </scene>
-        <!--Navigation Controller - Device-->
-        <scene sceneID="Bv1-Pj-0Zz">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uUi-GG-BrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="HS4-uo-gDQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Device" image="wrench.png" id="WX1-iR-tV9"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="n6t-Pm-CNl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zB2-bR-JEu" kind="relationship" relationship="rootViewController" id="8rB-wJ-iNM"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-11" y="-604"/>
-        </scene>
         <!--Navigation Controller - Host-->
         <scene sceneID="FQY-nW-Wrw">
             <objects>
@@ -259,6 +267,25 @@
             </objects>
             <point key="canvasLocation" x="-66" y="1969"/>
         </scene>
+        <!--Navigation Controller - Devices-->
+        <scene sceneID="yQ8-kz-fTd">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hz-cf-YuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="8PV-eV-PAb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Devices" image="wrench.png" id="t23-DD-DzX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="PLj-FV-Okp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jsw-kQ-wmG" kind="relationship" relationship="rootViewController" id="mQU-Op-TY6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-11" y="-624"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house.png" width="30" height="30"/>
@@ -269,6 +296,17 @@
         <image name="vector.png" width="29" height="30"/>
         <image name="wrench.png" width="24" height="24"/>
     </resources>
+    <classes>
+        <class className="DeviceMasterVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DeviceMasterVC.h"/>
+            <relationships>
+                <relationship kind="outlet" name="deviceTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
