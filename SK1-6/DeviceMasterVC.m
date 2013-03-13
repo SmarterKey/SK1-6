@@ -74,12 +74,12 @@
     return 1;
 }
 
-//set the obligatory method "rowsInSection" to the count of the number of items in the instance of the array _devices. This tells the tableView its DataSource.
+//set the obligatory method "rowsInSection" to the count of the number of items in the instance of the array _devices. This tells the tableView its DataSource. NB you MUST set the DataSource of the tableView in StoryBoards by ctrl drag from Table View to the yellow circle ie View Controller when 2 outlets can be set. Simply click DataSource to set it and the little circle should fill up.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _devices.count;
 }
 
-//set the obligatory method "cellForRow", which tells the tableView what to show in the rows. Basically it should show the contents of each object in the array. This satisfies the protocol settings for Delegate. The delegate of this TableView is itself, that is to say display rows here in this tableView.
+//set the obligatory method "cellForRow", which tells the tableView what to show in the rows. Basically it should show the contents of each object in the array. This satisfies the protocol settings for Delegate. The delegate of this TableView is itself, that is to say display rows here in this tableView. NB you MUST set the Delegate of the tableView in StoryBoards by ctrl drag from Table View to the yellow circle ie View Controller when 2 outlets can be set. Simply click Delegate to set it and the little circle should fill up.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
 {
     
